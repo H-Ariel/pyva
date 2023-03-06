@@ -1,0 +1,2 @@
+class DoNotUnderstandException(Exception):
+	pass

@@ -1,0 +1,202 @@
+{
+  "no tag": {
+    "patterns": [
+      ""
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "greeting": {
+    "patterns": [
+      "Hi",
+      "Hey",
+      "Hello"
+    ],
+    "responses": [
+      "Hello!",
+      "Good to see you again!",
+      "Hi there, how can I help?"
+    ]
+  },
+  "goodbye": {
+    "patterns": [
+      "See you later",
+      "Goodbye",
+      "I am Leaving",
+      "bye",
+      "exit",
+      "quit"
+    ],
+    "responses": [
+      "Sad to see you go :(",
+      "See you later",
+      "Goodbye!"
+    ]
+  },
+  "thanks": {
+    "patterns": [
+      "thanks",
+      "thanks you",
+      "thank you",
+      "thank you so much"
+    ],
+    "responses": [
+      "glad to help you",
+      "you're welcome",
+      "always at your service"
+    ]
+  },
+  "<emotion question>": {
+    "patterns": [
+      "how are you",
+      "how are you today",
+      "How was your day"
+    ],
+    "responses": [
+      "I'm fine, glad you're here",
+      "Today I feel great"
+    ]
+  },
+  "about": {
+    "patterns": [
+      "what is your name",
+      "what's your name",
+      "who are you",
+      "what are you",
+      "who made you",
+      "who created you",
+      "tell me about your",
+      "tell me about yourself"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "tell joke": {
+    "patterns": [
+      "tell me a joke",
+      "tell me joke",
+      "tell joke"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "send mail": {
+    "patterns": [
+      "send mail",
+      "send a mail",
+      "send email",
+      "send an email"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "change password": {
+    "patterns": [
+      "change password",
+      "change the password",
+      "set password",
+      "set new password",
+      "set another password"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "show time": {
+    "patterns": [
+      "what is the time",
+      "what's the time",
+      "show current time",
+      "display current time"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "show date": {
+    "patterns": [
+      "what is the date",
+      "what's the date",
+      "show current date",
+      "display current date"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "write note": {
+    "patterns": [
+      "write note",
+      "write notes",
+      "save note",
+      "save notes",
+      "remember note",
+      "remember notes"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "show note": {
+    "patterns": [
+      "show note",
+      "show notes",
+      "display note",
+      "display notes",
+      "open note",
+      "open notes",
+      "read note",
+      "read notes"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "open mail": {
+    "patterns": [
+      "open mail",
+      "open gmail"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "open news": {
+    "patterns": [
+      "open news"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "open google": {
+    "patterns": [
+      "open google"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "open youtube": {
+    "patterns": [
+      "open youtube"
+    ],
+    "responses": [
+      ""
+    ]
+  },
+  "open weather": {
+    "patterns": [
+      "open weather",
+      "what is weather",
+      "what's weather"
+    ],
+    "responses": [
+      ""
+    ]
+  }
+}
