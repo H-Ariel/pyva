@@ -1,5 +1,3 @@
-import json
-
 import consts
 
 
@@ -10,5 +8,8 @@ def write_text(text, new_line=True):
 			log_file.write('\n')
 
 def write_json(json_obj, new_line=True):
-	#write_text(json.dumps(json_obj, indent=2), new_line)
-	write_text(json.dumps(json_obj), new_line)
+	txt = ''
+	for k, v in json_obj.items():
+		txt += f'{k}: {v}\t'
+	txt = txt[:-1]
+	write_text(txt, new_line)

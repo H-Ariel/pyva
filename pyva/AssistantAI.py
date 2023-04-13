@@ -10,6 +10,7 @@ from DoNotUnderstandException import DoNotUnderstandException
 
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+ERROR_THRESHOLD = 0.1
 
 
 class AssistantAI:
@@ -129,7 +130,7 @@ class AssistantAI:
 
 		sgd = SGD(learning_rate=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 		self.model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
-		hist = self.model.fit(np.array(train_x), np.array(train_y), epochs=consts.EPOCHS_NUMBER, batch_size=5, verbose=0)
+		hist = self.model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=0)
 
 		# save the model:
 
@@ -167,15 +168,13 @@ class AssistantAI:
 		bag = self.__bag_of_words(sentence, self.words)
 		predict_results = self.model.predict(np.array([bag]), verbose=0)[0]
 		
-		results = [[i, r] for i, r in enumerate(predict_results) if r > consts.ERROR_THRESHOLD]
+		results = [[i, r] for i, r in enumerate(predict_results) if r > ERROR_THRESHOLD]
 		results.sort(key=lambda x: x[1], reverse=True)
 
-		intents_probabilities = [ 
-			{
+		intents_probabilities = [ {
 				'intent': self.classes[r[0]], 
 				'probability': round(r[1], 2)
-			}
-			for r in results ]
+			} for r in results ]
 		
 		return intents_probabilities
 
