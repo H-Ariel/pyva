@@ -10,4 +10,4 @@ The text in login screen is from:
 Created by Ariel on April 2022
 Last update: 16.5.2022
 
-* Make sure you have installed the following packages: pyjokes, numpy, nltk, pyttsx3, SpeechRecognition
+* Make sure you have installed the following packages: numpy, nltk, pyttsx3, SpeechRecognition (speech_recognition), tensorflow, pyjokes
